@@ -6,11 +6,11 @@ def guess(num: int) ->  str | int:
       if i*i == num:
        
 
-        return i  
+        return num / i  
       
     return "трудно"
 
-print(guess(81))
+print(guess(144))
     
    
     

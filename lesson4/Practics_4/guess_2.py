@@ -24,6 +24,8 @@ if __name__ == "__main__":
 
 
     for curr_racist in range(1, 4):
+
+        racist_info : str = ""
         
         racist_info = f" на {'первом' if curr_racist == 1 else 'втором' if curr_racist == 2 else 'третьем'}: \n\n"
         for i in generate_race_data.values():

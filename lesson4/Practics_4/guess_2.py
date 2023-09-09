@@ -6,17 +6,20 @@ from import_this import(
 
 from time_conversion import seconds_conversion
 
+EXTRA_SYMBOL: int = 3
+
 if __name__ == "__main__":
 
     generate_race_data: RaceInfo = generate_race_data(5)
 
     winner_info: str = ""
     underscore_count: str = ""
+    
 
     for i in generate_race_data.values():
      if i.get("FinishedPlace") == 1:
         winner_info = f"\n\n\nВыиграл - {i.get('RacerName', 'Евгений Пригожин').upper()}!!! Поздравляем!!"
-        underscore_count = "_" * len(winner_info)
+        underscore_count = "_" * (len(winner_info) - EXTRA_SYMBOL)
         print(f"{winner_info}\n")
         print(f"{underscore_count}\n\n\n")
         print("Первые три места:\n")

@@ -18,4 +18,4 @@ def mask_list(array: list[int], mask: list[int]) -> list[int]:
     return [val * mask[i] * .5 for i, val in enumerate(array)]
 
 def test_mask_list():
-    assert mask_list([1,2,3], [1,0,0]) == [1, 0 , 0] 
+    assert mask_list([1,2,3], [1,0,0]) == [1, 0, 0] 
